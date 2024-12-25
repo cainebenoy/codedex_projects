@@ -1,55 +1,124 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  #word-display {
-    font-size: 24px;
-    letter-spacing: 10px;
-  }
-  
-  .input-section {
-    margin-top: 20px;
-  }
-  
-  input {
-    padding: 8px;
-    font-size: 16px;
-    width: 100px;
-  }
-  
-  button {
-    padding: 8px 16px;
-    font-size: 16px;
-    margin-left: 5px;
-    cursor: pointer;
-  }
-  
-  #message {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  #attempts {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #666;
-  }  
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+#word-display {
+  font-size: 24px;
+  letter-spacing: 10px;
+}
+
+.input-section {
+  margin-top: 20px;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  width: 100px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+#attempts {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.game-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hangman {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  margin-right: 50px; /* Increased margin to create more space */
+}
+
+.hangman-part {
+  display: block; /* Ensure all parts are visible at the start */
+  position: absolute;
+  background-color: black;
+}
+
+#head {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 20px;
+  left: 75px;
+}
+
+#body {
+  width: 10px;
+  height: 100px;
+  top: 70px;
+  left: 95px;
+}
+
+#left-arm {
+  width: 10px;
+  height: 50px;
+  top: 70px;
+  left: 45px;
+  transform: rotate(45deg);
+}
+
+#right-arm {
+  width: 10px;
+  height: 50px;
+  top: 70px;
+  left: 145px;
+  transform: rotate(-45deg);
+}
+
+#left-leg {
+  width: 10px;
+  height: 50px;
+  top: 170px;
+  left: 65px;
+  transform: rotate(45deg);
+}
+
+#right-leg {
+  width: 10px;
+  height: 50px;
+  top: 170px;
+  left: 125px;
+  transform: rotate(-45deg);
+}

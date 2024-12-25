@@ -9,14 +9,28 @@
 <body>
   <div class="container">
     <h1>Hangman Game</h1>
-    <p id="word-display">_ _ _ _ _</p>
-    <p id="message"></p>
-    <div class="input-section">
-      <input type="text" id="letter-input" maxlength="1" placeholder="Enter a letter">
-      <button id="guess-button">Guess</button>
+    <div class="game-area">
+      <div class="hangman">
+        <div class="hangman-part" id="head"></div>
+        <div class="hangman-part" id="body"></div>
+        <div class="hangman-part" id="left-arm"></div>
+        <div class="hangman-part" id="right-arm"></div>
+        <div class="hangman-part" id="left-leg"></div>
+        <div class="hangman-part" id="right-leg"></div>
+      </div>
+      <div class="game-info">
+        <p id="word-display">_ _ _ _ _</p>
+        <p id="hint" style="display:none;"></p>
+        <p id="message"></p>
+        <div class="input-section">
+          <input type="text" id="letter-input" maxlength="1" placeholder="Enter a letter">
+          <button id="guess-button">Guess</button>
+          <button id="hint-button">Hint</button>
+        </div>
+        <p id="attempts">Attempts left: 10</p>
+        <button id="restart-button" style="display:none;">Restart</button>
+      </div>
     </div>
-    <p id="attempts">Attempts left: 10</p>
-    <button id="restart-button" style="display:none;">Restart</button>
   </div>
   <script src="script.js"></script>
 </body>
